@@ -8,6 +8,13 @@ import { BlogComponent } from './blog/blog.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PostComponent } from './blog/post/post.component';
 import { ThumbComponent } from './blog/thumb/thumb.component';
+import { CarStoryComponent } from './car-story/car-story.component';
+import { ResumeComponent } from './car-story/resume/resume.component';
+import { CaseComponent } from './car-story/case/case.component';
+import { FormComponent } from './car-story/form/form.component';
+import { UserStoryComponent } from './user-story/user-story.component';
+import { StoryComponent } from './user-story/story/story.component';
+import { MaterialModule } from '../material.module';
 
 @NgModule({
   declarations: [
@@ -15,12 +22,19 @@ import { ThumbComponent } from './blog/thumb/thumb.component';
     LoginComponent,
     BlogComponent,
     PostComponent,
-    ThumbComponent
+    ThumbComponent,
+    CarStoryComponent,
+    ResumeComponent,
+    CaseComponent,
+    FormComponent,
+    UserStoryComponent,
+    StoryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
