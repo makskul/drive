@@ -1,1 +1,9 @@
-<app-blog></app-blog>
+<app-login *ngIf="isLogin"></app-login>
+<div *ngIf="isLogin === '1'">
+  <app-header></app-header>
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+

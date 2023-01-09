@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -15,6 +14,8 @@ import { FormComponent } from './car-story/form/form.component';
 import { UserStoryComponent } from './user-story/user-story.component';
 import { StoryComponent } from './user-story/story/story.component';
 import { MaterialModule } from '../material.module';
+import { HeaderComponent } from './header/header.component';
+import { FormBuilder, FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MaterialModule } from '../material.module';
     CaseComponent,
     FormComponent,
     UserStoryComponent,
-    StoryComponent
+    StoryComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +38,9 @@ import { MaterialModule } from '../material.module';
     BrowserAnimationsModule,
     MaterialModule
   ],
-  providers: [],
+  providers: [
+    FormBuilder,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
